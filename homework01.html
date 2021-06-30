@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>    
-    .myFormat { font-size: 10px; } 
+    .myFormat { font-size: 12px; } 
     .vertical-mode { writing-mode: vertical-lr; }
+    .height_td { height: 100px; }
     </style>
 </head>
 <body>
     <table class="myFormat" border="3" width="600" style="text-align:center">
+        <caption>宜蘭縣</caption>
         <thead>
             <th>時段</th>
             <th colspan="3">時間/科別/星期</th>
@@ -24,7 +26,7 @@
         </thead>
         <tbody>
             <tr>
-                <th class="vertical-mode" rowspan="9">上午</th>
+                <th class="vertical-mode" rowspan="11">上午</th>
                 <td></td>
                 <td>10</td>
                 <td>7:50<br/>8:00</td>
@@ -106,78 +108,111 @@
                 <td>80</td>
                 <td>簡昱文</td>
             </tr>
+            <tr>
+                <td rowspan="2">3</td>
+                <td rowspan="2">40</td>
+                <td rowspan="2">10:30<br/>11:10</td>
+                <td rowspan="2">國語</td>
+                <td rowspan="2">自然</td>
+                <td rowspan="2">音樂</td>
+                <td rowspan="2">社會</td>
+                <td rowspan="2">社會<br/>(電腦)</td>
+                <td rowspan="2">藝術<br/>與<br/>人文</td>
+                <td>音樂</td>
+                <td>40</td>
+                <td>萬巧如</td>
+            </tr>
+            <tr>
+                <td>美勞</td>
+                <td>80</td>
+                <td>簡昱文</td>
+            </tr>
         </tbody>
         <tbody>
             <tr>
-                <th class="vertical-mode" rowspan="8">下午</th>
+                <th rowspan="15">下<br>午</th>
+                <td rowspan="4"></td>
+                <td rowspan="4">80</td>
+                <td rowspan="2" >12:00<br>12:40</td>
+                <td colspan="5" rowspan="2">午餐時間</td>
+                <td class="height_td" colspan="2" rowspan="5">
+                        綜合活動
+                </td>
+                <td class="height_td" rowspan="5">120</td>
+                <td class="height_td" rowspan="5">劉屒華</td>
+              </tr>
+              <tr>
+              </tr>
+              <tr>
+                <td class="abort" rowspan="2">12:00<br>12:40</td>
+                <td class="abort" rowspan="2" colspan="5" >午餐時間</td>
+              </tr>
+              <tr>
+              </tr>
+              <tr>
+                <td rowspan="3">5</td>
+                <td rowspan="3">40</td>
+                <td rowspan="3">12:00<br>12:40</td>
+                <td rowspan="3">美勞</td>
+                <td rowspan="3">美勞</td>
+                <td rowspan="9">美勞<br>美勞<br>美勞<br></td>
+                <td rowspan="3">美勞</td>
+                <td rowspan="3">美勞</td>
+              </tr>
+              <tr>
+                <td rowspan="4">彈性時間</td>
+                <td rowspan="2">國</td>
+                <td rowspan="2">10</td>
+                <td rowspan="2">劉屒華</td>
+              </tr>
+              <tr>
+              </tr>
+              <tr>
+                <td rowspan="2">6</td>
+                <td rowspan="2">40</td>
+                <td rowspan="2">12:00<br>12:40</td>
+                <td rowspan="2">美勞</td>
+                <td rowspan="2">美勞</td>
+                <td rowspan="2">美勞</td>
+                <td rowspan="2">美勞</td>
+                <td rowspan="2">英</td>
+                <td rowspan="2">10</td>
+                <td rowspan="2">許淑柄</td>
+              </tr>
+              <tr>
+              </tr>
+              <tr>
                 <td rowspan="2"></td>
-                <td rowspan="2">80</td>
-                <td>12:00<br/>12:40</td>
-                <td colspan="5">午餐時間</td>
-                <td colspan="2">綜合活動</td>
-                <td>120</td>
-                <td>劉屒華</td>
-            </tr>
-            <tr>
-                <td>12:40<br/>13:20</td>
-                <td colspan="5">午餐時間</td>
-                
-            </tr>
-            <tr>
-                <td>5</td>
-                <td>40</td>
-                <td>13:30<br/>14:10</td>
-                <td>美勞</td>
-                <td>國語</td>
-                <td rowspan="5">老師<br/>進修<br/>時間</td>
-                <td>綜合</td>
-                <td>國語</td>
-                <td rowspan="2" height="90px">彈性時間</td>
-                <td height="45px">彈性課程</td>
-                <td>160</td>
-                <td>劉屒華</td>
-            </tr>
-            <tr>
-                <td>6</td>
-                <td>40</td>
-                <td>14:20<br/>15:00</td>
-                <td>美勞</td>
-                <td>英文</td>
-                <td>綜合</td>
-                <td>體育</td>
-                <td>英文</td>
-                <td>40</td>
-                <td>許淑柄</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>20</td>
-                <td>15:00<br/>15:20</td>
-                <td colspan="2">整潔</td>
-                <td colspan="2">時間</td>
-                <td>合計</td>
-                <td colspan="4">12:20</td>
-            </tr>
-            <tr>
+                <td rowspan="2">20</td>
+                <td rowspan="2">12:00<br>12:40</td>
+                <td colspan="2" rowspan="2">整潔</td>
+                <td colspan="2" rowspan="2">時間</td>
+                <td rowspan="2">合計</td>
+                <td colspan="3" rowspan="2"></td>
+              </tr>
+              <tr>
+              </tr>
+              <tr>
                 <td rowspan="2">7</td>
                 <td rowspan="2">40</td>
-                <td rowspan="2">15:20<br/>16:00</td>
-                <td rowspan="2">彈性</td>
-                <td rowspan="2">鄉土</td>
-                <td rowspan="2">綜合</td>
-                <td rowspan="2">國語</td>
-                <td colspan="4">四年五班</td>
-            </tr>
-            <tr>
-                <td colspan="4">級任導師</td>
-            </tr>
-            <tr>
-                <td></td>
-                <td>10</td>
-                <td>16:00<br/>16:10</td>
-                <td colspan="5">收穫滿行囊滿心歡喜回家去</td>
-                <td colspan="4">劉屒華老師 </td>
-            </tr>
+                <td rowspan="2">12:00<br>12:40</td>
+                <td rowspan="2">談</td>
+                <td rowspan="2">土</td>
+                <td rowspan="2">粽</td>
+                <td rowspan="2">國</td>
+                <td colspan="4"></td>
+              </tr>
+              <tr>
+                <td colspan="4"></td>
+              </tr>
+              <tr>
+                <td rowspan="2"></td>
+                <td rowspan="2">10</td>
+                <td rowspan="2">12:00<br>12:40</td>
+                <td colspan="5" rowspan="2"></td>
+                <td colspan="4" rowspan="2"></td>
+              </tr>
+             <tr></tr>
         </tbody>
         </table>
 </body>
