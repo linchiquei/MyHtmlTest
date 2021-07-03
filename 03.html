@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* *{
+           color: brown; 
+        } */
+        /* !important > inline-style > id > class > tag > * > 繼承tag > 0 */
+        /* id 一頁頁面內id不會重覆！*/
+        /* #box{
+            background-color: lightgreen;
+        }
+        .AA.BB{ // class 的下一層用 . 找
+            background-color: lightcoral;
+        }
+        .AA{
+            background-color: lightseagreen;
+        }
+        p{
+            background-color: hotpink !important;
+        } */
+        /* p{
+            background-color: lawngreen;
+            color: burlywood;
+        } */
+
+        p span{ /* tag的下一層用 空白格 找 */
+            color: red;
+        }
+        div span{
+            color: greenyellow;
+        }
+        .AA span{
+            color: hotpink;
+        }
+        .BB span{
+            color: indigo;
+        }
+        .CC span{
+            color: lavenderblush;
+        }
+        /* *{
+            color: hotpink;
+        } */
+    </style>
+</head>
+<body>
+    <!-- <p class="AA BB" id="box" style="background-color: lightseagreen;">1234444444</p>
+    <p>33339fjfjfjfflkkgjg</p>
+    <p>449jvjjfjfdkdkkjgj</p>
+    <p>2kffkffkfkkf<span>dkdkddkdk</span>fkfkfkfkfk</p> -->
+
+    <p>123 <span>222</span>333</p>
+    <div>2kkkkkkk <span>210dk</span>dkdkd</div>
+    <div class="AA">2kfkf<span>210dk</span>dkdkd</div>
+    <div class="BB">29jdjdj<span>210dk</span>dkdkd</div>
+    <div class="CC">39djdjsj<span>210dk</span>dkdkd</div>
+</body>
+</html>

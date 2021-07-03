@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="/Users/linqirui/Downloads/normalize.css"> -->
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        .item{
+            width: 300px;
+            margin: 10px; /*他的周圍要佔多少空間 上下左右*/
+            padding: 20px;
+            
+        }
+        .item h3{
+            font-size: 20px;
+            line-height: 15px;
+            margin: 0; /*only 對 block 有空*/            
+        }
+        .vue{
+            background-color: rgb(0,170, 128);
+            margin-left: auto; /*有auto就會有剩下的空間 left剩左邊*/
+            margin-right: auto; /*有auto就會有剩下的空間 right剩右邊*/
+            
+        }
+        .ror{
+            background-color: rgb(197,0,0);
+        }
+        .gsror{
+            background-color: rgb(255, 125, 138);
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+    <div class="item vue">
+        <h3>title</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, quasi!</p>
+    </div>
+    <div class="item ror">
+        <h3>title</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, sint.</p>
+    </div>
+    <div class="item gsror">
+        <h3>title</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, ipsum!</p>
+    </div>
+</body>
+</html>

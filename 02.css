@@ -1,0 +1,17 @@
+p{
+    color: hsl(30, 100%, 50%);
+    color: #c77ace;
+    color: #aaa; /*三組同樣數字可以縮寫*/
+}
+h1{
+    background-color: #b8ec7c80; /*0~F 16進位 + 0-99透明度*/
+    border: 3px double red; /*粗細 樣式 色彩*/
+    border-top: double;
+    border-right: double;
+    border-bottom: firebrick;
+}
+[class]{
+    background-color: #2fd42f;
+}p:first-of-type{
+    background-color: greenyellow;
+}
