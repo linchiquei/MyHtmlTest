@@ -70,15 +70,20 @@
 
        .banner-button{
         --tw-bg-opacity: 1;
-        background-color: rgba(255,19,62,var(--tw-bg-opacity));
-        --tw-text-opacity: 1;
-        color: rgba(255,255,255,var(--tw-text-opacity));
-        text-align: center;
-        display: inline-block;
-        border-radius: 0.25rem;
-        font-size: 1.125rem;
-        line-height: 1.75rem;
-        padding: 0.75rem 2rem;
+    background-color: rgba(255,19,62,var(--tw-bg-opacity));
+    transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+    cursor: pointer;
+    --tw-text-opacity: 1;
+    color: rgba(255,255,255,var(--tw-text-opacity));
+    text-align: center;
+    display: inline-block;
+    border-radius: 0.25rem;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    padding: 0.75rem 2rem;
+    text-decoration: none;
        }
 
        .content{
@@ -145,8 +150,10 @@
 
        .teacher{
            background-color:rgb(249, 250,251);
-           height: 1766px;
+           height: 2520px;
        }
+
+      
 
        .teacher .wrap{
            width: 768px;
@@ -179,7 +186,7 @@
 
        .teacher .idol{
         width: 100%;
-        margin-bottom: 1.25rem;
+        margin-bottom: 6rem;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap; 
@@ -292,9 +299,9 @@
 
        .teacher .idol .item .foot{
         margin-bottom: 1rem;
-    display: flex;
-    -webkit-box-align: center;
-    align-items: center;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
        }
 
        .teacher .idol .item .foot p{
@@ -320,16 +327,359 @@
 
        .teacher .idol .item .ps a{
         margin-right: 1rem;
-    margin-bottom: 1rem;
-   
-    text-align: center;
-    padding: 0.25rem 0.75rem;
-    display: inline-block;
-    text-decoration: none;
-    color: red;
-    border: red solid 1px;
-    height: 20px;
+        margin-bottom: 1rem;  
+        text-align: center;
+        padding: 0.25rem 0.75rem;
+        display: inline-block;
+        text-decoration: none;
+        color: red;
+        border: red solid 1px;
+        height: 20px;
        }
+
+       .newlist{
+        margin-bottom: 3rem;
+        color: #394150;
+        margin-top: 4rem;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+        justify-content: space-evenly;
+       }
+
+       .newlist div{
+           width: 600px;
+           height: 100px;
+           margin-bottom: 3rem;
+       }
+
+       .newlist div h4{
+        font-size: 1.5rem;
+        line-height: 2rem;
+        font-weight: 700;
+        padding-bottom: 0.75rem;
+       }
+
+       .newlist div span{
+        --tw-text-opacity: 1;
+        color: rgba(108,114,127,var(--tw-text-opacity));
+        display: block;
+       }
+
+       .newbutton{
+        text-align: center;
+        margin-bottom: 4rem;
+       }
+
+       .newbutton a{
+        --tw-bg-opacity: 1;
+        background-color: rgba(255,19,62,var(--tw-bg-opacity));
+        transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 150ms;
+        cursor: pointer;
+        --tw-text-opacity: 1;
+        color: rgba(255,255,255,var(--tw-text-opacity));
+        text-align: center;
+        display: inline-block;
+        border-radius: 0.25rem;
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+        padding: 0.75rem 2rem;
+        text-decoration: none;
+       }
+
+       .lesson{
+        background-color:rgb(40, 47,63);
+        height: 1576px;
+       }
+
+        .lesson .content{
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+            width: 100%;
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+        }
+       
+        .lesson .content .left{
+            width: 480px;
+            text-align: left;
+        }
+
+        .lesson .content .left h2{
+            width: 100%;
+            padding-bottom: 0.25rem;
+            font-size: 1.875rem;
+            line-height: 2rem;
+            font-weight: 700;
+            position: relative;
+            --tw-text-opacity: 1;
+            color: rgba(255,255,255,var(--tw-text-opacity));
+            
+        }
+
+        .lesson .content .left hr{
+            border: red solid 1px;
+           width: 37px;
+           display: inline-block;
+           margin-bottom: 1.25rem;
+        }
+
+        .lesson .content .left h4{
+
+            font-size: 1.25rem;
+            line-height: 1.75rem;
+            text-align: left;
+            --tw-text-opacity: 1;
+            color: rgba(160,166,177,var(--tw-text-opacity));
+        }
+
+        .lesson .content .right{
+            background-color: red;
+            width: 480px;
+            height: 480px;
+            text-align: center;
+            line-height: 480px;
+           
+        }
+
+        .lesson .content .right h2{
+            color: white;
+            font-size: 1.5rem;
+            line-height: 2rem;
+            font-weight: 700;
+        }
+
+         .lesson-title{
+            text-align: left;
+            color: white;
+            font-size: 1.5rem;
+            line-height: 2rem;
+            font-weight: 700;
+            margin: 2rem;
+        }
+
+         .lesson-sort{
+            width: 100%;
+            margin: 1.5rem auto 3rem;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+            
+        }
+
+         .lesson-sort .item{
+            width: 366px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            --tw-bg-opacity: 1;
+            background-color: rgba(255,255,255,var(--tw-bg-opacity));
+            border-radius: 0.5rem;
+        }
+
+         .lesson-sort .item .card{
+            width: 100%;
+            height: 12.5rem;
+            display: flex;
+            border-top-left-radius: 0.5rem;
+            border-top-right-radius: 0.5rem;
+            overflow: hidden;
+        }
+
+        .lesson-sort .item .card-background{
+            --tw-bg-opacity: 1;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center top;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+            border-top-left-radius: 0.5rem;
+            border-top-right-radius: 0.5rem;
+            background-image: linear-gradient(rgba(24, 35, 45, 0.4), rgba(24, 35, 45, 0.4)), url('https://60defc1c32568b0008a72f18--5xtraining.netlify.app/_next/static/images/learning-im_coding_it-2e61e20cb43462295664b6dcfe31b74a.png');           
+        }
+
+        .lesson-sort .item .card-background h3{
+            font-weight: 700;
+                --tw-text-opacity: 1;
+                color: rgba(249,250,251,var(--tw-text-opacity));
+                font-size: 1.5rem;
+                line-height: 2rem;
+                text-align: center;
+        }
+
+         .lesson-sort .item .card-down{
+            height: auto;
+            padding: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            --tw-bg-opacity: 1;
+            border-bottom-left-radius: 0.5rem;
+            border-bottom-right-radius: 0.5rem;
+            border:#e5e7eb solid 1px;
+        }
+
+         .lesson-sort .item .card-down .card-title{
+            padding-bottom: 1rem;
+            margin-bottom: 0.75rem;
+            position: relative;
+            border-style: solid;
+            border-bottom-width: 1px;
+            --tw-border-opacity: 1;
+            border-color: rgba(211,214,219,var(--tw-border-opacity));
+        }
+
+         .lesson-sort .item .card-down .card-title h4{
+            padding-bottom: 0.75rem;
+            font-weight: 700;
+            font-size: 1.25rem;
+        } 
+
+         .lesson-sort .item .card-down .card-title span{
+            padding: 0.25rem;
+            margin-right: 0.5rem;
+            font-size: 0.75rem;
+            line-height: 1rem;
+            --tw-text-opacity: 1;
+            color: rgba(108,114,127,var(--tw-text-opacity));
+            border:#e5e7eb solid 1px;
+            border-radius: 0.25rem;
+        }
+
+         .lesson-sort .item .card-down .card-detail{
+            display: flex;
+            -webkit-box-pack: justify;
+            justify-content: space-between;
+        }
+
+        .lesson-sort .item .card-down .card-detail p{
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+            color: #394150;
+            line-height: 1.75rem;
+            font-size: 1rem;
+        }
+
+         .lesson-sort .item .card-down .card-detail .detail-left{
+            font-size: 1rem;
+            line-height: 1.25rem;
+            --tw-text-opacity: 1;
+            color: rgba(160,166,177,var(--tw-text-opacity));
+            display: inline-block;
+        }
+
+         .lesson-sort .item .card-down .card-detail .detail-right{
+            display: inline-block;
+            font-size: 0.875rem;
+            line-height: 1.25rem;
+            --tw-text-opacity: 1;
+            color: rgba(248,113,113,var(--tw-text-opacity));
+        }
+
+        .lesson-sort .item .card-down .card-ps{
+            margin-top: auto;
+            margin-bottom: 0px;
+            --tw-text-opacity: 1;
+            color: rgba(255,19,62,var(--tw-text-opacity));
+        }
+
+        .lesson-sort .item .card-down .card-ps span{
+            padding-right: 0.25rem;
+        }
+
+         .lesson-button{
+            text-align: center;
+        }
+
+        .learn-path{
+            text-align: left;
+            padding-top: 12rem;
+            padding-left: 2rem;
+            height: 170px;
+        }
+
+        .learn-path .title{
+        margin-bottom: 0.5rem;
+        font-size: 1.875rem;
+        line-height: 2.25rem;
+       }
+
+       .learn-path .line{
+            border: red solid 1px;
+           width: 55px;
+           margin-bottom: 2rem;
+       }
+
+       .learn-path .summery{
+           
+        font-size: 1.25rem;
+        line-height: 1.75rem;
+        text-align: left;
+        --tw-text-opacity: 1;
+        color: rgba(57,65,80,var(--tw-text-opacity));
+       }
+
+       .learn{
+        background-color:rgb(249, 250,251);
+           height: 1100px;
+       }
+
+       .article{
+           padding-top: 6rem;
+       }
+
+       .article .article-cotent {
+           display: flex;
+           flex-direction: row;
+           flex-wrap: wrap;
+           justify-content: space-evenly;
+           padding-bottom: 3rem;
+       }
+
+       .article .article-cotent .item{
+            color: #394150;
+            width: 390px;
+            height: 355px;
+       }
+
+       .article .article-cotent .item .up{
+            height: 15rem;
+            overflow: hidden;
+            border-radius: 0.375rem;
+            display: block;
+            border-color: #e5e7eb;
+        }
+
+        .article .article-cotent .item .up img{
+            object-position: center center;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+
+        .article .article-cotent .item .down{
+            margin-top: 1.25rem;
+        }
+
+        .article .article-cotent .item .down h4{
+            font-size: 1.5rem;
+            line-height: 2rem;
+            font-weight: 700;
+        }
+
+        .article .article-cotent .item .down small{
+            display: block;
+            --tw-text-opacity: 1;
+            color: rgba(160,166,177,var(--tw-text-opacity));
+            margin-top: 0.75rem;
+            font-size: 80%;
+        }
 
     </style>
 </head>
@@ -351,7 +701,7 @@
         <img class="banner-pic" src="https://picsum.photos/1440/600?grayscale">
         <h1 class="banner-title">五倍學習，突破你的可能性</h1>
         <h3 class="banner-summery">掌握實戰經驗，從初心素人到業界接軌，讓專業師資為你重新定義程式教育。</h3>
-        <button class="banner-button">立即選課</button>
+        <a class="banner-button" data-event-category=GetCourses data-event-action=Click data-event-label=Home/Banner href=/courses class="Button-sc-1bfvxi3-0 jKtbyt">立即選課</a>
     </div>
 
     <div class="content">
@@ -523,8 +873,323 @@
 
 
         </div>
-        <div class="news">123</div>
+        <div class="content">
+            <h2 class="content-title">媒體報導</h2>
+            <h2 class="fake-line"></h2>
+        </div>
+        <div class="newlist">
+            <div>
+                <h4>想當高薪工程師 備妥三大關鍵能力求職更順暢</h4>
+                <span>中時新聞網・2021/01</span>
+            </div>
+            <div>
+                <h4>營養系畢業、他撥接上網學程式，教人轉職工程師成功率達八成！</h4>
+                <span>EnglishOK</span>
+            </div>
+            <div>
+                <h4>教出八成轉職就業率、技術書籍狂賣15刷，程式教學大神竟是營養系出身！</h4>
+                <span>天下雜誌</span>
+            </div>
+            <div>
+                <h4>從調酒師到工程師！她靠中英文線上課程自學一年，成功轉職</h4>
+                <span>天下雜誌・2020/01</span>
+            </div>
+            <div>
+                <h4>勇往「職」前！五倍紅寶石的 ASTRO Camp 舉辦第一屆 Demo Day</h4>
+                <span>INSIDE・2019/07</span>
+            </div>
+            <div>
+                <h4>無痛轉職都是騙人的！「微痛」學習法教你跨領域轉職工程師</h4>
+                <span>INSIDE・2019/01</span>
+            </div>
+        </div>
+        <div class="newbutton">
+            <a data-event-category=GetPress data-event-action=Click data-event-label=Home/Press href=/press class="Button-sc-1bfvxi3-0 jKtbyt">更多報導</a>
+        </div>
     </div>
     
+    <div class="lesson">
+        <div class="content">
+            <div class="left">
+                <h2>短期實體課程</h2>
+                <hr>
+                <h4>目標清晰的短期課程，針對單一技術所開設。適合在職進修的工程師、PM，或對網頁設計有興趣的你。</h4>
+            </div>
+            <div class="right">
+                <h2>幻燈片示意</h2>
+            </div>          
+        </div>
+        <div class="lesson-title">
+            <h3>近期課程</h3>
+        </div>
+        <div class="lesson-sort">
+            <div class="item">
+                <div class="card">
+                    <picture>
+                        <source srcset="https://images.ctfassets.net/8er52l3j5u76/7saiPpQcPN4D1EnS9cMZWh/1a7392721a8f5bb5aea6b06687139b64/Vue-js-Banner-600x315.jpg?fm=webp&amp;q=80" type=image/webp><img src="https://images.ctfassets.net/8er52l3j5u76/7saiPpQcPN4D1EnS9cMZWh/1a7392721a8f5bb5aea6b06687139b64/Vue-js-Banner-600x315.jpg?q=80" alt="課程封面 - Vue.js" width=100% height=100% class="Image__ImgStyle-sc-11ijrum-0 dEDAHv">
+                    </picture>
+                </div>
+                <div class="card-down">
+                    <div class="card-title">
+                        <h3></h3>
+                        <span>2021 / 7 月班</span>
+                    </div>
+                    <div class="card-detail">
+                        <div class="detail-left">講師：許國政 (Kuro Hsu)</div>
+                        <span class="detail-right">進階課程</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card">
+                    <picture>
+                        <source srcset="https://images.ctfassets.net/8er52l3j5u76/7saiPpQcPN4D1EnS9cMZWh/1a7392721a8f5bb5aea6b06687139b64/Vue-js-Banner-600x315.jpg?fm=webp&amp;q=80" type=image/webp><img src="https://images.ctfassets.net/8er52l3j5u76/7saiPpQcPN4D1EnS9cMZWh/1a7392721a8f5bb5aea6b06687139b64/Vue-js-Banner-600x315.jpg?q=80" alt="課程封面 - Vue.js" width=100% height=100% class="Image__ImgStyle-sc-11ijrum-0 dEDAHv">
+                    </picture>
+                </div>
+                <div class="card-down">
+                    <div class="card-title">
+                        <h3></h3>
+                        <span>2021 / 7 月班</span>
+                    </div>
+                    <div class="card-detail">
+                        <div class="detail-left">講師：許國政 (Kuro Hsu)</div>
+                        <span class="detail-right">進階課程</span>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card">
+                    <picture>
+                        <source srcset="https://images.ctfassets.net/8er52l3j5u76/7saiPpQcPN4D1EnS9cMZWh/1a7392721a8f5bb5aea6b06687139b64/Vue-js-Banner-600x315.jpg?fm=webp&amp;q=80" type=image/webp><img src="https://images.ctfassets.net/8er52l3j5u76/7saiPpQcPN4D1EnS9cMZWh/1a7392721a8f5bb5aea6b06687139b64/Vue-js-Banner-600x315.jpg?q=80" alt="課程封面 - Vue.js" width=100% height=100% class="Image__ImgStyle-sc-11ijrum-0 dEDAHv">
+                    </picture>
+                </div>
+                <div class="card-down">
+                    <div class="card-title">
+                        <h3></h3>
+                        <span>2021 / 7 月班</span>
+                    </div>
+                    <div class="card-detail">
+                        <div class="detail-left">講師：許國政 (Kuro Hsu)</div>
+                        <span class="detail-right">進階課程</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="lesson-button">
+            <a class="banner-button" data-event-category=GetCourses data-event-action=Click data-event-label=Home/Banner href=/courses class="Button-sc-1bfvxi3-0 jKtbyt">看更多課程</a>
+        </div>
+    </div>
+
+
+    <div class="learn">
+        <div class="learn-path">
+            <h2 class="title">掌握自己的學習路徑</h2>
+            <h2 class="line"></h2>
+            <h4 class="summery">針對不同需求的學員，五倍規劃了多元且完整的學習路徑：從前端到後端，全方面的包套課 <br> 程，與彈性的線上課程、假日班，任您自由選擇。</h4>
+    </div>
+
+    <div class="lesson-sort">
+        <div class="item">
+            <div class="card-background">
+                <h3>I'm coding it! <br> 微痛轉職工程師</h3>
+            </div>
+            <div class="card-down">
+                <div class="card-title">
+                    <h4>線上課程</h4>
+                </div>
+                <div class="card-detail">
+                    <p>不限時間、地點，自己掌握學習進度。課程內容包含前後端課程，附加完課即提供免費履歷健檢服務。適合在職、喜歡自己掌握進度的人。</p>
+                </div>
+                <div class="card-ps">
+                    <span>前往課程 ﹥</span>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="card-background">
+                <h3>I'm coding it! <br> 微痛轉職工程師</h3>
+            </div>
+            <div class="card-down">
+                <div class="card-title">
+                    <h4>線上課程</h4>
+                </div>
+                <div class="card-detail">
+                    <p>不限時間、地點，自己掌握學習進度。課程內容包含前後端課程，附加完課即提供免費履歷健檢服務。適合在職、喜歡自己掌握進度的人。</p>
+                </div>
+                <div class="card-ps">
+                    <span>前往課程 ﹥</span>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="card-background">
+                <h3>I'm coding it! <br> 微痛轉職工程師</h3>
+            </div>
+            <div class="card-down">
+                <div class="card-title">
+                    <h4>線上課程</h4>
+                </div>
+                <div class="card-detail">
+                    <p>不限時間、地點，自己掌握學習進度。課程內容包含前後端課程，附加完課即提供免費履歷健檢服務。適合在職、喜歡自己掌握進度的人。</p>
+                </div>
+                <div class="card-ps">
+                    <span>前往課程 ﹥</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    <div class="article">
+        <div class="content">
+            <h2 class="content-title">精選文章</h2>
+            <h2 class="fake-line"></h2>
+        </div>
+        <div class="article-cotent">
+            <div class="item">
+                <div class="up">
+                    <picture><img src="https://images.ctfassets.net/8er52l3j5u76/4FJLmHOcPH9mi0Tb0Ep4Wv/6b34dce2bea40e940830929298edb28a/Rails-____________.jpeg?q=80" alt="Post - 用 Rails 串接藍新金流一點都不難！" class="Image__ImgStyle-sc-11ijrum-0 dEDAHv"></picture>
+                </div>
+                <div class="down">
+                    <h4>用 Rails 串接藍新金流一點都不難！</h4>
+                    <small>By Yuchan・6月 25 2021・技術文章</small>
+                </div>
+            </div>
+            <div class="item">
+                <div class="up">
+                    <picture><img src="https://images.ctfassets.net/8er52l3j5u76/4FJLmHOcPH9mi0Tb0Ep4Wv/6b34dce2bea40e940830929298edb28a/Rails-____________.jpeg?q=80" alt="Post - 用 Rails 串接藍新金流一點都不難！" class="Image__ImgStyle-sc-11ijrum-0 dEDAHv"></picture>
+                </div>
+                <div class="down">
+                    <h4>用 Rails 串接藍新金流一點都不難！</h4>
+                    <small>By Yuchan・6月 25 2021・技術文章</small>
+                </div>
+            </div>
+            <div class="item">
+                <div class="up">
+                    <picture><img src="https://images.ctfassets.net/8er52l3j5u76/4FJLmHOcPH9mi0Tb0Ep4Wv/6b34dce2bea40e940830929298edb28a/Rails-____________.jpeg?q=80" alt="Post - 用 Rails 串接藍新金流一點都不難！" class="Image__ImgStyle-sc-11ijrum-0 dEDAHv"></picture>
+                </div>
+                <div class="down">
+                    <h4>用 Rails 串接藍新金流一點都不難！</h4>
+                    <small>By Yuchan・6月 25 2021・技術文章</small>
+                </div>
+            </div>
+        </div>
+        <div class="newbutton">
+            <a data-event-category=GetPress data-event-action=Click data-event-label=Home/Press href=/press class="Button-sc-1bfvxi3-0 jKtbyt">更多文章</a>
+        </div>
+    </div>
+    <div class="botton">
+        <div class="content">
+            <div class="left">
+                <picture>
+                    <img src="https://60defc1c32568b0008a72f18--5xtraining.netlify.app/_next/static/images/inverted_logo-dde38e95b20e76407a7ab3e7db2e1c64.svg" alt="五倍紅寶石・專業程式教育" width="209" height="65" class="Image__ImgStyle-sc-11ijrum-0">
+                </picture>
+                <div>
+                    <h2>電話 | (02) 2331-5247</h2>
+                    <h2>信箱 | course@5xcampus.com</h2>
+                    <h2>地址 | 10046 台北市中正區衡陽路 7 號 5 樓</h2>
+                </div>
+            </div>
+            <div class="right">
+                <div class="item">
+                    <h2>專業課程</h2>
+                    <ul><li><h3>全方位培訓營</h3></li></ul>
+                    <ul><li><h3>ASTRO Camp</h3></li></ul>
+                    <ul><li><h3>線上課程</h3></li></ul>
+                    <ul><li><h3>短期課程</h3></li></ul>
+                </div>
+                <div class="item">
+                    <h2>專業課程</h2>
+                    <ul><li><h3>全方位培訓營</h3></li></ul>
+                    <ul><li><h3>ASTRO Camp</h3></li></ul>
+                    <ul><li><h3>線上課程</h3></li></ul>
+                    <ul><li><h3>短期課程</h3></li></ul>
+                </div>
+                <div class="item">
+                    <h2>專業課程</h2>
+                    <ul><li><h3>全方位培訓營</h3></li></ul>
+                    <ul><li><h3>ASTRO Camp</h3></li></ul>
+                    <ul><li><h3>線上課程</h3></li></ul>
+                    <ul><li><h3>短期課程</h3></li></ul>
+                </div>
+                <div class="item">
+                    <h2>專業課程</h2>
+                    <ul><li><h3>全方位培訓營</h3></li></ul>
+                    <ul><li><h3>ASTRO Camp</h3></li></ul>
+                    <ul><li><h3>線上課程</h3></li></ul>
+                    <ul><li><h3>短期課程</h3></li></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
+
+
+<style>
+        .botton{
+            padding-top: 6rem;
+            background-color:rgb(40, 47,63);
+            height: 1200px;
+            
+        }
+
+        .botton .content{
+            max-width: 768px;
+            display: flex;
+    flex-wrap: wrap;
+  justify-content: space-around;
+    --tw-text-opacity: 1;
+    color: rgba(255,255,255,var(--tw-text-opacity));
+        }
+
+        .botton .content .left{
+            text-align: left;
+            padding-left: 2rem;
+            padding-right: 10rem;
+            display: inline-block;
+        }
+
+        .botton .content .left img{
+            max-width: 100%;
+            height: auto;
+        }
+
+        .botton .content .left div{
+            padding-bottom: 2.5rem;
+            padding-top: 1rem;
+            --tw-text-opacity: 1;
+            color: rgba(229,231,235,var(--tw-text-opacity));
+            font-size: 0.875rem;
+            line-height: 1.5rem;
+
+        }
+
+        .botton .content .right{
+            display: flex;
+        
+    flex-wrap: wrap;
+ 
+
+        }
+
+        .botton .content .right .item{
+            padding-bottom: 4rem;
+            
+            font-size: 1rem;
+            line-height: 2rem;
+            text-align: left;
+     
+        }
+
+        .botton .content .right .item h2{
+            padding-bottom: 0.75rem;
+            font-weight: 700;
+            --tw-text-opacity: 1;
+            color: rgba(255,255,255,var(--tw-text-opacity));
+        }
+
+</style>
+
 </html>
