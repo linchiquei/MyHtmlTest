@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+
+	<style>
+		.box{
+			width: 500px;
+			margin: auto;
+		}
+		.box input{
+			position: absolute;
+			opacity: 0;
+			width: 1;
+			height: 1px;
+		}
+		.box span{
+			display: inline-block;
+			width: 12px;
+			height: 12px;
+			border: 1px solid #aaa;
+			vertical-align: middle;
+			position: relative;
+			top: -2px;
+		}
+		.box span:before{
+			content: '✔';
+			position: absolute;
+			left: 0;
+			top: -10px;
+			font-size: 20px;
+			opacity: 0;
+			transform: scale(0);
+			transition: 1s;
+		}
+		.box input:checked + span:before{
+			opacity: 1;
+			transform: scale(1.5);
+		}
+	</style>
+
+	<div class="box">
+		<label>
+			<input type="radio" name="sex">
+			<span></span>
+			1個
+		</label>
+		<label>
+			<input type="radio" name="sex">
+			<span></span>
+			2個
+		</label>
+		<label>
+			<input type="radio" name="sex">
+			<span></span>
+			3個
+		</label>
+		<label>
+			<input type="radio" name="sex">
+			<span></span>
+			4個
+		</label>
+	</div>
+	
+</body>
+</html>
