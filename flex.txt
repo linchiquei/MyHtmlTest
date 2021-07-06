@@ -1,0 +1,47 @@
+justify-content 水平對齊元素
+flex-start: 元素和容器的左端對齊。
+flex-end: 元素和容器的右端對齊。
+center: 元素在容器裏居中。
+space-between: 元素之間保持相等的距離。
+space-around: 元素周圍保持相等的距離。
+
+align-items 縱向對齊元素
+flex-start: 元素與容器的頂部對齊。
+flex-end: 元素與容器的底部對齊。
+center: 元素縱向居中。
+baseline: 元素在容器的基線位置顯示。
+stretch: 元素被拉伸以填滿整個容器。
+
+align-self 這個屬性接受和align-items一樣的那些值。
+注意::是設定在item上。
+
+flex-direction 元素在容器裏擺放的方向
+注意::當你調轉列或行的方向後，justify-content flex-start和flex-end對應的方向也被調轉了。
+注意::當flex以column爲方向時，justify-content控制縱向對齊，align-items控制橫向對齊。
+row: 元素擺放的方向和文字方向一致。
+row-reverse: 元素擺放的方向和文字的方向相反。
+column: 元素從上放到下。
+column-reverse: 元素從下放到上。
+
+order 元素的屬性默認值爲0，但是我們設置這個屬性爲正數或負數
+
+flex-wrap 為元素設定換行
+nowrap: 所有的元素都在一行。
+wrap: 元素自動換成多行。
+wrap-reverse: 元素自動換成逆序的多行。
+
+flex-flow flex-direction和flex-wrap 兩個屬性的縮寫。這個縮寫屬性接受兩個屬性的值，兩個值中間以空格隔開。ex:flex-flow: row wrap
+
+align-content 來決定行與行之間隔多遠
+flex-start: 多行都集中在頂部。
+flex-end: 多行都集中在底部。
+center: 多行居中。
+space-between: 行與行之間保持相等距離。
+space-around: 每行的周圍保持相等距離。
+stretch: 每一行都被拉伸以填滿容器。
+
+容器中央
+display:flex;
+justify-content:center;
+align-items:center;
+height: www <-一定要有高度
