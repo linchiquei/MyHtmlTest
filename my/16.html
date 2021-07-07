@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+         .box-zero{
+            width: 0px;
+            height: 0px;
+            --x:25px;
+            --y:25px;
+            border-top: var(--y) black solid;
+            border-left: var(--x) red solid ;
+            border-bottom: var(--y) green solid;
+            border-right: var(--x) orange solid;
+
+        }
+
+        .box{
+            width: 0px;
+            height: 0px;
+            /* border-top: 20px black solid; */
+            border-left: 20px transparent solid ;
+            border-bottom: 20px green solid;
+            border-right: 20px transparent solid;
+
+        }
+
+        .triangle-right{
+            width: 0px;
+            height: 0px;
+            /* border-top: 20px black solid; */
+            /* border-left: 20px transparent solid ; */
+            border-bottom: 20px green solid;
+            border-right: 20px transparent solid;
+        }
+
+        .triangle-left{
+            width: 0px;
+            height: 0px;
+            /* border-top: 20px black solid; */
+            border-left: 20px transparent solid ;
+            border-bottom: 20px green solid;
+            /* border-right: 20px transparent solid; */
+        }
+
+        .part{
+        width: 80px;
+        height: 80px;
+    }
+
+    .part .up{
+        background-color: orange;
+        height: 60px;
+        text-align: center;
+        line-height: 60px;
+    }
+
+    .part .down{
+        width: 0;
+        height: 0;
+        border-top: 20px solid orange;;
+        border-left: 40px solid orange;
+        border-right: 40px solid black;
+        border-bottom: 20px solid transparent;
+    }
+    ＊{
+        margin: 0;
+        padding: 0;
+    }
+
+    </style> 
+</head>
+<body>
+
+
+
+    <div class="box-zero"></div>
+    <div class="box"></div>
+    <div class="triangle-right"></div>
+    <div class="triangle-left"></div>
+
+    <div class="part">
+        <div class="up">87折</div>
+        <div class="down"></div>
+    </div>
+
+
+
+
+</body>
+</html>
+
+<style>
+
+</style>

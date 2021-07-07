@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <div class="child"></div>
+    </div>
+
+    <div> <p>段落文字</p> </div>
+
+    <div class="part">
+        <div class="txt">87折</div>
+    </div>
+    
+</body>
+</html>
+<style>
+    .part{
+        width: 50px;
+    }
+
+    .part .txt{
+        
+        text-align: center;
+        background-color: orange;
+        color: white;
+    }
+
+    .part::after{
+        padding: auto 30px;
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        border-left: 25px solid #000;
+        border-right: 25px solid #000;
+        border-bottom: 25px solid transparent;
+    }
+
+    :root{
+        --root: purple;
+    } 
+    .box{
+        --color:orange;
+        width: 400px;
+        height: 400px;
+        background-color: var(--root); 
+        /* background-color: var(--child); /*父拿不到子層的變數*/ 
+    }
+
+    .child{
+        --child:green;
+        width: 100px;
+        height: 100px;  
+        background-color: pink;   
+        background-color: var(--color); /*類似繼承的概念 子可以拿到父的變數*/ 
+    }
+
+    /* div{
+        background-color: #aaa; 
+    }
+    div p::after{
+        content: '我是css生出來的文字';
+        color: red;
+    }
+    div p::before{
+        content: '我是css生出來的文字';
+        color: red;
+    } */
+</style>
