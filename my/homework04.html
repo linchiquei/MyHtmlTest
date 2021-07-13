@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+
+   <style>
+
+        .box{
+            width: 960px;
+            margin: 0 auto;
+        }
+        .item{
+            position: relative;
+            margin-bottom: 200px;
+            border: violet solid 1px;
+            height: 800px;
+        }
+
+        .item img{
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        .icon{
+            color: white;
+            background: red;
+            padding: 10px 20px;
+            width: auto;
+            display: inline-block;
+            position: relative;
+           
+        }
+        .icon:nth-child(odd){
+            right: 800px;
+            position:absolute;
+        }
+        .icon.small{
+            position: absolute;
+            right: 100px;
+        }
+
+        .small-box{
+            width: 357px;
+            height: 357px;
+            background-color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            z-index: 1;
+            position: relative;
+        }
+
+
+        .small-box:nth-child(odd){
+            left: 600px;
+        }
+
+        .small.small-box{
+            left: 0px;
+        }
+
+        .small-box h2{
+            background-color: red;
+            font-size: 70px;
+        }
+        .small-box h3{
+            color: white;
+            font-size: 28px;
+            background-color: black;
+            padding: 10px;
+        }
+        .small-box h4{
+            font-size: 20px;
+            color: white;
+            background-color: black;
+            line-height: 40px;
+            padding: 10px;
+        }
+        .detail{
+            background-color: rgb(192, 192, 192);
+            padding: 0 20px 20px 20px;
+            width: 682px;
+            bottom: auto;
+            position: relative;
+            height: 278px;
+            bottom: -144px;
+        }
+
+        .detail:nth-child(odd){
+            right: 0px;
+        }
+
+        .detail.small{
+            left: 30px;
+        }
+
+        .detail h4{
+            color: rgb(218, 56, 56);
+            font-size: 20px;
+            line-height: 60px;
+            display: flex;
+            align-items: center;
+        }
+        .detail h4::after{
+            content: '';
+            border-top: rgb(218, 56, 56) solid 1px;
+            display: block;
+            flex-grow: 1;
+        }
+        .detail .block{
+            color: white;
+            background-color: black;
+            padding: 5px;
+            display: inline-block;
+        }
+        .detail li{
+            color: rgb(29, 29, 29);
+            line-height: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="item">
+            <div class="small-box ">
+                <h2>01操控樂趣</h2>
+                <h3>人人滿意的駕駛體驗</h3>
+                <h4>透過最佳重量分配，實現平順起步、直線穩定加速、過彎同時保持車身平穩、帶給駕駛更靈敏的道路反饋、享受隨心奔馳的行駛快感</h4>
+            </div>
+            <img src="https://picsum.photos/695/430/?grayscale">
+            <div class="icon ">▶</div>
+           
+            <div class="detail small">
+                <h4>因為我們做了這些革新</h4>
+                <div class="block">低重心設計</div>
+                <ul><li>透過低重心設計，不懂呈現更低伏的外觀，更能減少車身傾斜，保持高速穩定性</li></ul>
+                <div class="block">低重心設計</div>
+                <ul><li>透過低重心設計，不懂呈現更低伏的外觀，更能減少車身傾斜，保持高速穩定性</li></ul>
+                <div class="block">低重心設計</div>
+                <ul><li>透過低重心設計，不懂呈現更低伏的外觀，更能減少車身傾斜，保持高速穩定性</li></ul>
+            </div>
+        </div>
+        <div class="item">
+            <div class="small-box small">
+                <h2>01操控樂趣</h2>
+                <h3>人人滿意的駕駛體驗</h3>
+                <h4>透過最佳重量分配，實現平順起步、直線穩定加速、過彎同時保持車身平穩、帶給駕駛更靈敏的道路反饋、享受隨心奔馳的行駛快感</h4>
+            </div>
+            <img src="https://picsum.photos/695/430/?grayscale">
+            <div class="icon small">▶</div>
+           
+            <div class="detail">
+                <h4>因為我們做了這些革新</h4>
+                <div class="block">低重心設計</div>
+                <ul><li>透過低重心設計，不懂呈現更低伏的外觀，更能減少車身傾斜，保持高速穩定性</li></ul>
+                <div class="block">低重心設計</div>
+                <ul><li>透過低重心設計，不懂呈現更低伏的外觀，更能減少車身傾斜，保持高速穩定性</li></ul>            </div>
+        </div>
+    </div>
+</body>
+</html>

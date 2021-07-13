@@ -1,0 +1,391 @@
+
+/* *{
+    color: #394150;
+} */
+
+.header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.sub{
+    padding: 10px;
+    height: 68px;
+    text-align: center;
+    line-height: 68px;
+}
+
+.logo{      
+flex-grow: 1;
+}
+
+.banner{
+background-image: url("texture/941-1440x528.jpeg");
+background-repeat: no-repeat;
+background-attachment: scroll;
+clip-path: polygon(0px 0px, 100% 0px, 100% 88%, 30% 100%, 0px 88%);
+}
+
+.banner .content{
+margin: auto;
+color: #fff;
+padding-left: 90px;
+padding-top:88px;
+padding-bottom: 80px;
+
+}
+
+.banner .content h1{
+margin-bottom: 1.5rem;
+font-size: 3rem;
+line-height: 1;
+font-weight: 700;
+
+}
+
+.banner .content p{
+margin-bottom: 4rem;
+font-size: 1.25rem;
+line-height: 1.75rem;
+}
+
+.content a,
+.newlist .content a{
+background-color: #ff133e;
+color: #fff;
+font-size: 1.25rem;
+text-decoration: none;
+padding: 5px;
+border-radius: 2px;
+padding: 10px 20px 10px 20px;
+}
+
+.btn{
+    padding: 65px auto;
+    text-align: center;
+}
+
+
+.banner::after{
+content: none;
+display: block;
+content: '';
+display: block;
+
+}
+
+.title{
+text-align: center;
+margin: 85px auto;
+}
+
+.title h1{
+margin-bottom: 2rem;
+font-size: 1.875rem;
+line-height: 2.25rem;
+font-weight: 700;
+}
+
+.title h1::after{
+content: '';
+display: block;
+border-bottom: 1px red solid;
+margin: 0 auto;
+width: 50px;
+padding-top: 10px;
+}
+
+.title h2{
+font-size: 1.25rem;
+line-height: 1.75rem;
+}
+
+.flex-box{
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+}
+
+.flex-box .item{
+display: flex;
+flex-direction: column;
+align-items: center;
+--tw-text-opacity: 1;
+color: rgba(57,65,80,);
+text-align: center;
+margin-bottom: 2.5rem;
+padding-left: 1.25rem;
+padding-right: 1.25rem;
+}
+
+.item h4{
+font-weight: 700;
+font-size: 1.125rem;
+line-height: 1.75rem;
+margin-top: 1rem;
+margin-bottom: 0.5rem;
+}
+
+.teacher{
+height: 100%;
+background-color: #e5e7eb;
+}
+
+.deep-teacher{
+    height: 100%;
+    background-color: #394150;
+    }
+
+.teacher::before{
+content: none;
+display: block;
+content: '';
+display: block;
+width: 0;
+height: 0;
+border-bottom: 160px solid transparent;
+border-left: 432px solid #fff;
+border-right: 1008px solid #fff;
+}
+
+.deep-teacher::before{
+    content: none;
+    display: block;
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-bottom: 160px solid transparent;
+    border-left: 432px solid #e5e7eb;
+    border-right: 1008px solid #e5e7eb;
+    }
+
+.ouside{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title-left{
+    width: 918px;
+    margin: 0 auto;
+    margin-bottom: 2.5rem;
+}
+
+.title-left h1{
+text-align: left;
+margin-bottom: 2rem;
+font-size: 1.875rem;
+line-height: 2.25rem;
+font-weight: 700;
+}
+
+.title-left h1::after{
+content: '';
+display: block;
+border-bottom: 1px red solid;
+width: 50px;
+padding-top: 10px;
+}
+
+.title-left h2{
+text-align: left;
+font-size: 1.25rem;
+line-height: 1.75rem;
+}
+
+.idol{
+    width: 100%;
+    display: grid;
+    grid-column-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.idol .item{
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 0.375rem;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.idol .item .head{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 0.75rem;
+}
+
+.idol .item .head .avator{
+    border-radius: 9999px;
+    width: 10rem;
+    height: 10rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    align-self: center;
+    overflow: hidden;
+}
+
+.idol .item .head .avator img{
+    width: 100%;
+}
+
+.idol .item .head .detail{
+    margin-left: 1.25rem;
+    color: #394150;
+    text-align: left;
+}
+
+.idol .item .head .detail h3{
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.idol .item .head .detail h3::after{
+    content: '';
+    display: block;
+    border-bottom: 1px red solid;
+    width: 50px;
+    padding-top: 10px;
+}
+
+.idol .item .head .detail p{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    font-weight: 700;
+}
+
+.idol .item .body{
+    border-top: #eee solid 1px;
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+    text-align: left;
+}
+
+.idol .item .body p{
+    margin-bottom: 0.5rem;
+    line-height: 24px;
+    font-size: 16px;
+}
+
+.text-bold{
+    font-weight:bold;
+}
+
+.text-red{
+    color: red;
+}
+
+.idol .item .foot{
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.idol .item .foot hr{
+    flex-grow: 1;
+    border-top: #eee solid 1px;
+}
+
+.idol .item .link{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+.idol .item .link a{
+    text-decoration: none;
+    color: red;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px red solid;
+    margin-right: 5px;
+}
+
+.newlist{
+    grid-template-columns: repeat(2, minmax(0px, 1fr));
+    margin-bottom: 3rem;
+    display: grid;
+    gap: 2rem;
+    margin-top: 4rem;
+    margin: auto 20px;
+}
+
+.newlist .list h2{
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    padding-bottom: 0.75rem;
+}
+
+.newlist .list p{
+    --tw-text-opacity: 1;
+    color: rgba(108,114,127,var(--tw-text-opacity));
+}
+
+.box-red{
+    height: 384px;
+    background-color: red;
+    width: 549px;
+}
+
+.cont{
+    display: flex;
+    justify-content: center;
+}
+
+#sma {
+    width: 549px;
+    margin: 0;
+}
+
+.title-lesson{
+    color: white;
+    font-size: 24px;
+    margin: 0 20px;
+}
+
+.lesson{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.lesson .item{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    margin: 20px;
+}
+
+.lesson .item img{
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    width: 437px; 
+}
+
+.lesson .item .go{
+    display: flex;
+    height: auto;
+    line-height: 20px;
+    align-items: center;
+}
+
+.lesson .item .go p{
+    color: #6c727f;
+    font-size: 16px;
+}
+
+.lesson .item .go h4{
+    color: #f87171;
+    font-size: 14px;
+}
+

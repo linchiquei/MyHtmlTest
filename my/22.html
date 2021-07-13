@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        .box{
+            margin: 20px;
+            width: 960px;
+            display: flex;
+        }
+
+        .item{
+            width: 300px;
+            height: auto;
+            margin: 0 10px;
+            background-color: white;
+            position: relative;
+            bottom: 0;
+            border: rgba(128, 128, 128, 0.486) 1px solid;
+            border-radius: 10px;
+            box-shadow: 0px 0px 0px transparent;
+        }
+        .item:hover{
+            bottom: 20px;
+            box-shadow: 0px 20px 0px red;
+        }
+        .item .logo{
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            width: auto;
+            height: 150px;
+            overflow: hidden;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="item">
+            <div class="logo">
+ <img src="https://picsum.photos/300/300/?random=1">
+            </div>
+           
+             <h4>title</h4>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, fuga?</p>
+        </div>
+        <div class="item">
+           
+           <div class="logo">
+ <img src="https://picsum.photos/300/300/?random=1">
+           </div>
+           
+             <h4>title</h4>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, fuga?</p>
+        </div>
+        <div class="item">
+           
+           <div class="logo">
+ <img src="https://picsum.photos/300/300/?random=1">
+           </div>
+           
+             <h4>title</h4>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, fuga?</p>
+        </div>
+     
+    </div>
+
+    <div class="box3">
+        <div class="item3">
+            <img src="https://picsum.photos/280/280/?random=1">
+            <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, delectus.</h4>
+        </div>
+        <div class="item3">
+            <img src="https://picsum.photos/280/280/?random=1">
+            <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, delectus.</h4>
+        </div>
+        <div class="item3">
+            <img src="https://picsum.photos/280/280/?random=1">
+            <h4>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, delectus.</h4>
+        </div>
+    </div>
+
+</body>
+<style>
+        .item3{
+            width: 280px;
+            height: 280px;
+            background-color: greenyellow;
+            margin: 10px;
+            position: relative;
+           
+        }
+
+        .item3 h4{
+            position: absolute;
+            text-align: center;
+            background-color: grey;
+            bottom: 0px;
+        }
+
+        .item3 h4:after{
+            content: '3310';
+            position: absolute;
+            top:-20px;
+            margin: auto;
+            left: 0;
+            background-color: hotpink;
+        }
+
+        .box3{
+            width: 960px;
+            display: flex;
+        }
+        
+</style>
+</html>
