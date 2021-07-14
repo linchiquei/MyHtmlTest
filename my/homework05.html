@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900">
+    <style>
+        h1,h2,p,a,li{
+            font-family: "Montserrat";
+        }
+
+        .banner{
+            width: 1440px;
+            height: 850px;
+            background-color: #71b85f;
+            position: relative;
+            overflow: hidden;
+            padding-top: 120px;
+        }
+
+        .banner::after{
+            content: '';
+            display: block;
+            position: absolute;
+            right: -410px;
+            bottom: -150px;
+            width: 1175px;
+            height: 1175px;
+            border-radius: 9999px;
+            background-color: white; 
+        }
+
+        .menu nav{
+            background-color: #71b85f;
+            width: 1440px;
+            padding: 34px 0;
+            position: fixed;
+            top: 0;
+            display: flex;
+            align-items: center;
+            z-index: 2;
+        }
+
+        .menu nav a + a{
+            color: white;
+            padding: 0 20px;
+            font-size: 16px;
+            text-decoration: none;
+        }
+
+        .menu nav a:hover{
+            text-decoration:underline;
+            text-underline-offset: 10px;
+        }
+
+        .menu nav a img{
+            padding-left: 120px;
+            width: 134px;
+        }
+
+        .pen{
+            width: 74px;
+            height: 74px;
+            border-radius: 9999px;
+            box-shadow: 3px 12px 15px rgb(0 0 0 / 10%);
+            background-color: #f9f9f9;
+            text-align: center;
+            font-size: 30px;
+            line-height: 74px;
+            position: fixed;
+            top: 30px;
+            right: 30px;
+            z-index: 3;
+        }
+
+        .content{
+        padding-left: 120px;
+        color:white;
+        display: flex;
+    }
+
+    .content .title{
+        width: 500px;
+        padding-right: 160px;
+    }
+    .content .title h2{
+        font-size: 20px;
+        font-weight: 600;
+        padding: 83px 0;
+    }
+    .content .title h1{
+        font-size: 70px;
+        font-weight: 900;
+        position: relative;
+    }
+    .content .title p{
+        font-size: 18px;
+        font-weight: 500;
+        padding-top: 60px;
+        padding-bottom: 80px;
+        width: 470px;
+        line-height: 31px;
+    }
+
+    .content .title h1::before{
+        content:'#1';
+        display: block;
+        background-color: #ffee58;
+        position: absolute;
+        top: -30px;
+        left: -10px;
+        box-shadow: 7px 8px 10px rgb(0 0 0 / 25%);
+        border-radius: 99px;
+        width: 46px;
+        height: 46px;
+        font-size: 20px;
+        color: black;
+        text-align: center;
+        line-height: 46px;
+    }
+
+    .content .title li{
+        display: inline-block;
+        font-size: 30px;
+        font-weight: 500;
+        padding-right: 30px;
+        color:white;
+        border-bottom: 1px white solid;
+    }
+
+    .content .pic{
+        padding: 110px 0;
+        width: 600px;
+        height: 600px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .content .pic img{
+        width: 100%;
+        height: 100%;
+        border-radius: 100%;
+        box-shadow: 0 0 80px rgb(0 0 0 / 15%);
+    }
+
+    </style>
+</head>
+<body>
+    <div class="pen"><a href="#"></a><i class="fas fa-pencil-alt"></i></div>
+    <div class="box">
+            <div class="banner">
+                <div class="content">
+                    <div class="title">
+                        <h2>WECLOME TO PLATE</h2>
+                        <h1>DELIVERY <br> SERVICE</h1>
+                        <p>plate offers quick delivery of organic & healthy food all over over the state</p>
+                        <ul>
+                            <li>01</li>
+                            <li>02</li>
+                            <li>03</li>
+                            <li>04</li>
+                        </ul>
+                        <p>Why Choose Plate</p>
+                    </div>
+                    <div class="pic">
+                        <img src="texture/[livedemo00.template-help.com][28]slider-01-671x671.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="menu">
+                <nav>
+                    <a href="#"><img src="texture/[livedemo00.template-help.com][454]logo-inverse-269x100.png" alt=""></a>
+                    <a href="#">Progrems</a>
+                    <a href="#">About</a>
+                    <a href="#">Client</a>
+                </nav>
+            </div>
+            <div class="cooker">
+                <div class="pic">
+                    <div class="msgbox">
+                        <p class="p1">Julie Fox</p>
+                        <p class="p2">Head Chef</p>
+                    </div>
+                    <img src="texture/[livedemo00.template-help.com][982]home-01-455x685.png" alt="">
+                </div>
+                <div class="title">
+                    <h3>ABOUT US</h3>
+                    <h2>HEALTHY FOOD <br>
+                        CAN BE DELICIOUS
+                        </h2>
+                    <p>Plate was established in 2013, as a reliable food service provider where anyone could order healthy food they like.</p>
+                    <ul>
+                        <li>Choose gluten-free meals from our menu</li>
+                        <li>The freshest ingredients for every dish</li>
+                        <li>Get great discounts when ordering for 2+ people</li>
+                    </ul>
+                    <span class="btn">READ MORE</span>
+                </div>
+            </div>
+    </div>
+</body>
+<style>
+   
+    .cooker{
+        display: flex;
+        padding-left: 120px;
+        padding-top: 60px;
+    }
+
+    .cooker .pic{
+        position: relative;
+        width: 570px;
+        padding: 0 15px;
+    }
+
+    .cooker .pic .msgbox{
+        right: 120px;
+        top: 180px;
+        width: 135px;
+        height: 63px;
+        background-color: white;
+        border: 3px solid #d6d6d6;
+        position: absolute;
+        text-align: center;
+        line-height: 30px;
+       
+    }
+
+    .cooker .pic .msgbox::after{
+        content: '';
+        display: block;
+        position: absolute;
+        left: 10px;
+        bottom: -20px;
+        border-style: solid;
+        border-width: 20px 20px 0 0;
+        border-color: #d6d6d6 transparent transparent transparent;
+       
+    }
+
+    .cooker .pic .msgbox::before{
+        content: '';
+        display: block;
+        position: absolute;
+        left: 13px;
+        bottom: -13px;
+        border-style: solid;
+        border-width: 0 0 20px 20px;
+        border-color: transparent transparent transparent white;
+        z-index: 1;
+    }
+
+    .cooker .pic .msgbox .p1{
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .cooker .title{
+        width: 470px;
+        padding: 90px 15px;
+        color: black;
+    }
+    .cooker .title h3{
+        font-size: 20px;
+        font-weight: 600px;
+        padding-bottom: 30px;
+        color: #7c7c7c;
+    }
+    .cooker .title h2{
+     font-size: 40px;
+     font-weight: 700;
+     line-height: 49px;
+    }
+    .cooker .title p{
+        font-size: 16px;
+        padding: 30px 0;
+        line-height: 27px;
+        color: #7c7c7c;
+    }
+</style>
+</html>

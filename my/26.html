@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Qahiri&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        h1{
+            font-family: 'Qahiri', sans-serif;
+        }
+        p{
+            font-family: 'Zen Loop', cursive;
+        }
+
+        h2{
+            font-size: 34px;
+            opacity: 0;
+            transition: 0.3s;
+            color: red;
+
+        }
+
+        h2:hover{
+            
+            opacity: 1;
+        }
+
+        @keyframes move{
+            0%{ left: 0;}
+            100%{ left: 1400px; background-color: yellowgreen}
+        }
+
+        .box{
+            width: 100px;
+            height: 100px;
+            animation: move 3s linear alternate-reverse;
+            animation-iteration-count:infinite;
+            position: relative;
+            background-color: red;
+            
+        }
+        .box:hover{
+            background-color: blue;
+        }
+        .small{
+            position: fixed;
+            top: 0px;
+            left: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">123</div>
+    <div class="box small">123</div>
+    <h2>
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-algolia"></i>
+    </h2>
+
+    <h1>title</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat iure quidem nihil sequi cumque dignissimos, exercitationem illum repellendus similique nostrum, dolorum fuga ea! Quaerat, ad beatae rem voluptatibus expedita nam?</p>
+</body>
+</html>
