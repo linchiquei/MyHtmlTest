@@ -36,8 +36,9 @@
 
         .menu nav{
             background-color: #71b85f;
+            border-bottom: 1px #d6d6d6 solid;
             width: 1440px;
-            padding: 34px 0;
+            padding: 17px 0;
             position: fixed;
             top: 0;
             display: flex;
@@ -59,6 +60,7 @@
 
         .menu nav a img{
             padding-left: 120px;
+            padding-right: 70px;
             width: 134px;
         }
 
@@ -72,8 +74,8 @@
             font-size: 30px;
             line-height: 74px;
             position: fixed;
-            top: 30px;
-            right: 30px;
+            top: 40px;
+            right: 45px;
             z-index: 3;
         }
 
@@ -147,6 +149,112 @@
         box-shadow: 0 0 80px rgb(0 0 0 / 15%);
     }
 
+    .cooker{
+        display: flex;
+        padding-left: 120px;
+        padding-top: 60px;
+        background-color: #f9f9f9;
+    }
+
+    .cooker .pic{
+        position: relative;
+        width: 570px;
+        padding: 0 15px;
+       
+    }
+
+    .cooker .pic img{
+        filter: drop-shadow(20px 20px 15px rgba(0, 0, 0, 0.15));
+    }
+
+    .cooker .pic .msgbox{
+        right: 120px;
+        top: 180px;
+        width: 135px;
+        height: 63px;
+        background-color: #f9f9f9;
+        border: 3px solid #d6d6d6;
+        position: absolute;
+        text-align: center;
+        line-height: 30px;
+       
+    }
+
+    .cooker .pic .msgbox::after{
+        content: '';
+        display: block;
+        position: absolute;
+        left: 10px;
+        bottom: -20px;
+        border-style: solid;
+        border-width: 20px 20px 0 0;
+        border-color: #d6d6d6 transparent transparent transparent;
+       
+    }
+
+    .cooker .pic .msgbox::before{
+        content: '';
+        display: block;
+        position: absolute;
+        left: 13px;
+        bottom: -13px;
+        border-style: solid;
+        border-width: 0 0 20px 20px;
+        border-color: transparent transparent transparent #f9f9f9;
+        z-index: 1;
+    }
+
+    .cooker .pic .msgbox .p1{
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .cooker .title{
+        width: 470px;
+        padding: 90px 15px;
+        color: black;
+    }
+    .cooker .title h3{
+        font-size: 20px;
+        font-weight: 600px;
+        padding-bottom: 30px;
+        color: #7c7c7c;
+    }
+    .cooker .title h2{
+     font-size: 40px;
+     font-weight: 700;
+     line-height: 49px;
+    }
+    .cooker .title p{
+        font-size: 16px;
+        padding: 30px 0;
+        line-height: 27px;
+        color: #7c7c7c;
+    }
+
+    .cooker .title ul{
+        padding-bottom: 50px;
+    }
+
+    .cooker .title li{
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 31px;
+        padding-left: 33px;
+        position: relative;
+    }
+
+    .cooker .title li::before{
+        content: '';
+        position: absolute;
+        display: inline-block;
+        left: 0;
+        top: 14px;
+        height: 2px;
+        width: 20px;
+        background-color: #71b85f;
+    }
+
     </style>
 </head>
 <body>
@@ -201,85 +309,129 @@
                     <span class="btn">READ MORE</span>
                 </div>
             </div>
+            <div class="food">
+                <h3>WHAT WE OFFER</h3>
+                <h2>FOOD PACKAGES</h2>
+                <div class="list">
+                    <div class="item">
+                        <h3>DETOX</h3>
+                    
+                        <div class="body">15</div>
+                       
+                        <p>The best choice if you are looking for tasty & light yet healthy food to start your day full of energy.</p>
+                        <div class="btn">ORDER NOW</div>
+                        <a href="#">OPEN MENU (PDF)</a>
+                    </div>
+                    <img src="" alt="">
+                    <div class="item">
+                        <h3>BALANCED</h3>
+                    
+                        <div class="body">30</div>
+                        <p>If you need daily balanced menu including breakfast & dinner, then Balanced package is what you need!</p>                       
+                        <div class="btn">ORDER NOW</div>
+                        <a href="#">OPEN MENU (PDF)</a>
+                    </div>
+                    <img src="" alt="">
+                    <div class="item">
+                        <h3>VEGAN</h3>
+                    
+                        <div class="body">22</div>
+                        <p>Special menu developed for our vegan clients who appreciate healthy and plant-based food.</p>                       
+                        <div class="btn">ORDER NOW</div>
+                        <a href="#">OPEN MENU (PDF)</a>
+                    </div>
+                    <img src="" alt="">
+                </div>
+            </div>
     </div>
 </body>
 <style>
-   
-    .cooker{
+   .food{
+        background-color: #71b85f;
         display: flex;
-        padding-left: 120px;
-        padding-top: 60px;
-    }
+        flex-direction: column;
+        align-items: center;
+        
+   }
+   .food h3:first-of-type{
+       padding-top: 80px;
+       font-size: 20px;
+       font-weight: 600;
+       padding-bottom: 30px;
+       color: #b8dcaf;
+   }
+   .food h2:first-of-type {
+       color: white;
+       font-size: 40px;
+       font-weight: 700;
+       padding-bottom: 80px;
+   }
 
-    .cooker .pic{
-        position: relative;
-        width: 570px;
-        padding: 0 15px;
-    }
+   .food .list{
+       width: 1200px;
+       display: flex;
+       justify-content: space-around;
+   }
 
-    .cooker .pic .msgbox{
-        right: 120px;
-        top: 180px;
-        width: 135px;
-        height: 63px;
-        background-color: white;
-        border: 3px solid #d6d6d6;
-        position: absolute;
-        text-align: center;
-        line-height: 30px;
-       
-    }
+   .food .list .item{
+       background-color: white;
+       box-shadow: 0 7px 20px rgb(0 0 0 / 15%);
+       border-top-right-radius: 10px;
+       border-top-left-radius: 10px;
+       border-bottom-right-radius: 60px;
+       border-bottom-left-radius: 60px;
+       margin: 0 30px;
+       padding: 30px;
+   }
+   .food .list .item h3{
+       color: black;
+       padding: 0;
+   }
 
-    .cooker .pic .msgbox::after{
-        content: '';
-        display: block;
-        position: absolute;
-        left: 10px;
-        bottom: -20px;
-        border-style: solid;
-        border-width: 20px 20px 0 0;
-        border-color: #d6d6d6 transparent transparent transparent;
-       
-    }
 
-    .cooker .pic .msgbox::before{
-        content: '';
-        display: block;
-        position: absolute;
-        left: 13px;
-        bottom: -13px;
-        border-style: solid;
-        border-width: 0 0 20px 20px;
-        border-color: transparent transparent transparent white;
-        z-index: 1;
-    }
-
-    .cooker .pic .msgbox .p1{
-        font-size: 18px;
-        font-weight: 600;
-    }
-
-    .cooker .title{
-        width: 470px;
-        padding: 90px 15px;
-        color: black;
-    }
-    .cooker .title h3{
+    .food .list .item .body::before{
         font-size: 20px;
-        font-weight: 600px;
-        padding-bottom: 30px;
-        color: #7c7c7c;
+        font-weight: 500; 
+        display: inline-block;
+        content: '$';
+        position: absolute;
+        top: 10px;
+        left: -10px;
     }
-    .cooker .title h2{
-     font-size: 40px;
-     font-weight: 700;
-     line-height: 49px;
+
+   .food .list .item .body{
+       display: inline-block;
+       font-size: 80px;
+       font-weight: 300;
+       text-indent: 10px;
+       position: relative;
+       margin: 35px 0;
     }
-    .cooker .title p{
-        font-size: 16px;
-        padding: 30px 0;
-        line-height: 27px;
-        color: #7c7c7c;
+   .food .list .item .body::after{
+       content: 'PER DAY';
+       display: block;
+       text-align: right;
+       font-size: 16px;
+   }
+
+    .btn{
+        color: white;
+        background-color: #71b85f;
+        border-color: #71b85f;
+        padding: 22px 60px;
+        font-size: 14px;
+        line-height: 1.25;
+        font-weight: 700;
+        border-radius: 10em;
+        box-shadow: inset 0px -4px 2px rgb(0 0 0 / 25%);
+        transition: 250ms all ease-in-out;
+        display: inline-block;
     }
+
+    .btn:hover{
+        background-color: black;
+    }
+
+
 </style>
 </html>
