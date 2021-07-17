@@ -8,13 +8,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,900">
-    <style>
-        h1,h2,p,a,li{
+<style>
+        h1,h2,p,a,li,div{
             font-family: "Montserrat";
         }
 
         .banner{
-            width: 1440px;
+            width: auto;
             height: 850px;
             background-color: #71b85f;
             position: relative;
@@ -255,6 +255,318 @@
         background-color: #71b85f;
     }
 
+    .food{
+        background-color: #71b85f;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 60px;
+        
+   }
+   .food h3:first-of-type{
+       padding-top: 80px;
+       font-size: 20px;
+       font-weight: 600;
+       padding-bottom: 30px;
+       color: #b8dcaf;
+   }
+   .food h2:first-of-type {
+       color: white;
+       font-size: 40px;
+       font-weight: 700;
+       padding-bottom: 80px;
+   }
+
+   .food .list{
+       width: 1200px;
+       display: flex;
+       justify-content: space-around;
+   }
+
+   .food .list .item{
+       background-color: white;
+       box-shadow: 0 7px 20px rgb(0 0 0 / 15%);
+       border-top-right-radius: 60px;
+       border-top-left-radius: 10px;
+       border-bottom-right-radius: 60px;
+       border-bottom-left-radius: 60px;
+       padding: 48px 10px 68px 36px;
+       margin: 0 30px;
+       position: relative;
+   }
+
+   .food .list .item h3{
+       color: black;
+       padding: 0;
+   }
+
+
+    .food .list .item .body::before{
+        font-size: 20px;
+        font-weight: 500; 
+        display: inline-block;
+        content: '$';
+        position: absolute;
+        top: 10px;
+        left: -15px;
+    }
+
+   .food .list .item .body{
+       display: inline-block;
+       font-size: 80px;
+       font-weight: 300;
+       text-indent: 10px;
+       position: relative;
+       margin: 35px 0;
+    }
+   .food .list .item .body::after{
+       content: 'PER DAY';
+       display: block;
+       text-align: right;
+       font-size: 16px;
+   }
+
+   .food .list .item p{
+       line-height: 27px;
+       font-size: 16px;
+       padding-bottom: 25px;
+   }
+
+   .food .list .item .a-box{
+       width: 289px;
+       height: 51px;
+       display: flex;
+       justify-content: flex-start;
+       align-items: flex-end;
+   }
+
+   .a-box a{
+        color: black;
+   }
+
+   .a-box a:hover{
+       color: #71b85f;
+       transition: .3s;
+   }
+
+   .food .list .item .img-box{
+       position: absolute;
+       --size: 176px;
+       width: var(--size);
+       height: var(--size);
+       border-radius: 99px;
+       top: -8px;
+        right: -12px;
+        box-shadow: 0 0 80px rgb(0 0 0 / 20%);
+   }
+
+
+    .btn{
+        color: white;
+        background-color: #71b85f;
+        border-color: #71b85f;
+        padding: 22px 60px;
+        font-size: 14px;
+        line-height: 1.25;
+        font-weight: 700;
+        border-radius: 10em;
+        box-shadow: inset 0px -4px 2px rgb(0 0 0 / 25%);
+        transition: 250ms all ease-in-out;
+        display: inline-block;
+        
+    }
+
+    .btn:hover{
+        background-color: black;
+    }
+
+    .step{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 130px;
+        
+   }
+   .step h3:first-of-type{
+       padding-top: 80px;
+       font-size: 20px;
+       font-weight: 600;
+       padding-bottom: 30px;
+       color: #7f7f7f;
+   }
+   .step h2:first-of-type {
+       font-size: 40px;
+       font-weight: 700;
+       padding-bottom: 80px;
+   }
+
+   .step .list{
+       width: 1200px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+      
+   }
+
+   .step .list .item{
+    padding: 51px 15px 26px 40px;
+    border-radius: 60px 4px;
+    
+    transition: .3s;
+   }
+
+   .step .list .item:first-child{
+       background-color: #fff9bd;
+       position: relative;
+   }
+
+   .step .list .item:nth-child(3n){
+        background-color: #ecfcf9;
+        position: relative;
+   }
+
+   .step .list .item:last-child{
+       background-color: #dff9d9;
+       position: relative;
+   }
+
+   .step .list .item::before{
+        content: '01';
+        width: 58px;
+        height: 58px;
+        position: absolute;
+        background-color: white;
+        border-radius: 99px;
+        text-align: center;
+        line-height: 58px;
+        top: -15px;
+        left: -11px;
+        color: #9d9898;
+        font-size: 20px;
+        font-weight: 600;
+        box-shadow: 6px 8px 15px rgb(0 0 0 / 25%);
+   }
+
+   .step .list .item:nth-child(3n)::before{
+    content: '02';
+   }
+
+   .step .list .item:last-child::before{
+    content: '03';
+   }
+
+   .step .list .item h3{
+       width: 245px;
+       font-size: 20px;
+       font-weight: 600px;
+       color: black;
+       padding: 0;
+   }
+
+   .step .list .item p{
+        width: 245px;
+       font-size: 16px;
+       line-height: 27px;
+       padding-top:20px
+   }
+
+   .wave{
+       margin: 10px;
+   }
+
+   .feature{
+    background-color: #71b85f;
+    padding-left: 120px;
+    padding-bottom: 100px;
+    padding-top: 140px;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+}
+
+.feature .list{
+    display: flex;
+    flex-wrap: wrap;
+    width: 700px;
+}
+
+.feature .list .item{
+    width: 319px;
+    margin-bottom: 40px;
+    margin: 0 15px;
+    margin-bottom: 40px;
+}
+
+.feature .list .item h3{
+    
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+
+}
+
+.feature .list .item p{
+    font-size: 16px;
+    line-height: 27px;
+    color: #cce6c7;
+    
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+
+}
+.logo h3{
+    flex-flow: 1;
+    margin-left: 30px;
+}
+.logo:first-child{
+    color: white;
+    font-size: 50px;
+}
+
+.feature .list-pic{
+    
+}
+
+.pic-1{
+    position: absolute;
+    top: 70px;
+    right: 265px;
+}
+.pic-2{
+    position: absolute;
+    right: 87px;
+    bottom: -135px;
+
+}
+.pic-3{
+    position: absolute;
+    top: 35px;
+    right: -65px;
+
+}
+.pic-4{
+    position: absolute;
+    right: -80px;
+    bottom: 20px;
+
+}
+
+.list-pic img{
+    filter: drop-shadow(0 15px 10px rgba(0, 0, 0, 0.2));
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+    
+}
+
+.feature{
+    padding-left: 120px;
+
+}
+
     </style>
 </head>
 <body>
@@ -320,118 +632,112 @@
                        
                         <p>The best choice if you are looking for tasty & light yet healthy food to start your day full of energy.</p>
                         <div class="btn">ORDER NOW</div>
-                        <a href="#">OPEN MENU (PDF)</a>
+                        <div class="a-box"><a href="#">OPEN MENU (PDF)</a></div>
+                        <div class="img-box"><img src="texture/[livedemo00.template-help.com][704]product-01-176x176.png" alt=""></div>
+
                     </div>
-                    <img src="" alt="">
                     <div class="item">
                         <h3>BALANCED</h3>
                     
                         <div class="body">30</div>
                         <p>If you need daily balanced menu including breakfast & dinner, then Balanced package is what you need!</p>                       
                         <div class="btn">ORDER NOW</div>
-                        <a href="#">OPEN MENU (PDF)</a>
+                        <div class="a-box"><a href="#">OPEN MENU (PDF)</a></div>
+                        <div class="img-box"><img src="texture/[livedemo00.template-help.com][334]product-02-176x176.png" alt=""></div>
                     </div>
-                    <img src="" alt="">
                     <div class="item">
                         <h3>VEGAN</h3>
                     
                         <div class="body">22</div>
                         <p>Special menu developed for our vegan clients who appreciate healthy and plant-based food.</p>                       
                         <div class="btn">ORDER NOW</div>
-                        <a href="#">OPEN MENU (PDF)</a>
+                        <div class="a-box"><a href="#">OPEN MENU (PDF)</a></div>
+                        <div class="img-box"><img src="texture/product-03-176x176.png" alt=""></div>
+
                     </div>
+                </div>
+            </div>
+            <div class="step">
+                <h3>HOW IT WORKS</h3>
+                <h2>3 STEPS TO HEALTHY EATING</h2>
+                <div class="list">
+                    <div class="item">
+                        <h3>CHOOSE A FOOD PACKAGE</h3>
+                        <p>First, select the package that you prefer the most.</p>
+                    </div>
+                  <div class="wave"><img src="texture/arrow-110x14.png" alt=""></div>
+                    <div class="item">
+                        <h3>CUSTOMIZE YOUR MENU</h3>
+                        <p>After that, feel free to change and customize your menu.</p>
+                    </div>
+                  <div class="wave"><img src="texture/arrow-110x14.png" alt=""></div>
+                    <div class="item">
+                        <h3>SELECT A DELIVERY ADDRESS & TIME</h3>
+                        <p>Finally, let us know where and when to deliver your food.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="feature">
+                <div class="list">
+                    <div class="item">
+                        <div class="logo">
+                            <i class="far fa-gem"></i>
+                            <h3>Quality</h3>
+                        </div>                    
+                        <p>We work with the best suppliers to make sure you get the top-quality dishes, beverages, and service.</p>
+                    </div>
+                    <div class="item">
+                        <div class="logo">
+                            <i class="fas fa-leaf"></i>
+                            <h3>organic</h3>
+                        </div>                     
+                        <p>All ingredients we use are 100% organic and fresh. Such approach makes our food a lot healthier.</p>
+                    </div>
+                    <div class="item">
+                        <div class="logo">
+                            <i class="fas fa-hard-hat"></i>
+                            <h3>tasty</h3>
+                        </div>
+                        <p>Great and unforgettable taste of our dishes is what attracts more and more clients to Plate.</p>
+                    </div>
+                    <div class="item">
+                        <div class="logo">
+                            <i class="far fa-lemon"></i>
+                            <h3>Diverse</h3>
+                        </div>                      
+                        <p>Our team regularly updates the menus to provide you with better food diversity whenever you order.</p>
+                    </div>
+                </div>
+                <div class="list-pic">
+                    <img class="pic-1" src="texture/home-01-382x375.png" alt="">
+                    <img class="pic-2" src="texture/[livedemo00.template-help.com][569]home-03-461x407.png" alt="">
+                    <img class="pic-3" src="texture/[livedemo00.template-help.com][577]home-02-293x293.png" alt="">
+                    <img class="pic-4" src="texture/home-04-191x191.png" alt="">
+                </div>
+            </div>
+            <div class="client">
+                <div class="pic">
                     <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </div>
+                <div class="txt">
+                    <h3></h3>
+                    <h2></h2>
+                    <div class="deta">
+                        <img src="" alt="">
+                        <p></p>
+                        <h3></h3>
+                    </div>
+                    <div class="btn">SEND YOUR REVIEW</div>
                 </div>
             </div>
     </div>
 </body>
 <style>
-   .food{
-        background-color: #71b85f;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-   }
-   .food h3:first-of-type{
-       padding-top: 80px;
-       font-size: 20px;
-       font-weight: 600;
-       padding-bottom: 30px;
-       color: #b8dcaf;
-   }
-   .food h2:first-of-type {
-       color: white;
-       font-size: 40px;
-       font-weight: 700;
-       padding-bottom: 80px;
-   }
+.testimonials{
 
-   .food .list{
-       width: 1200px;
-       display: flex;
-       justify-content: space-around;
-   }
-
-   .food .list .item{
-       background-color: white;
-       box-shadow: 0 7px 20px rgb(0 0 0 / 15%);
-       border-top-right-radius: 10px;
-       border-top-left-radius: 10px;
-       border-bottom-right-radius: 60px;
-       border-bottom-left-radius: 60px;
-       margin: 0 30px;
-       padding: 30px;
-   }
-   .food .list .item h3{
-       color: black;
-       padding: 0;
-   }
-
-
-    .food .list .item .body::before{
-        font-size: 20px;
-        font-weight: 500; 
-        display: inline-block;
-        content: '$';
-        position: absolute;
-        top: 10px;
-        left: -10px;
-    }
-
-   .food .list .item .body{
-       display: inline-block;
-       font-size: 80px;
-       font-weight: 300;
-       text-indent: 10px;
-       position: relative;
-       margin: 35px 0;
-    }
-   .food .list .item .body::after{
-       content: 'PER DAY';
-       display: block;
-       text-align: right;
-       font-size: 16px;
-   }
-
-    .btn{
-        color: white;
-        background-color: #71b85f;
-        border-color: #71b85f;
-        padding: 22px 60px;
-        font-size: 14px;
-        line-height: 1.25;
-        font-weight: 700;
-        border-radius: 10em;
-        box-shadow: inset 0px -4px 2px rgb(0 0 0 / 25%);
-        transition: 250ms all ease-in-out;
-        display: inline-block;
-    }
-
-    .btn:hover{
-        background-color: black;
-    }
-
+}
 
 </style>
 </html>
