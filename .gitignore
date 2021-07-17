@@ -1,0 +1,4 @@
+# 檔案名稱 .gitignore
+
+# 忽略 .DS_Store 檔案
+*.DS_Store
