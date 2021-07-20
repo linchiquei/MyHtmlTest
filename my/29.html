@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
     <style>
         *{
             margin: 0;
@@ -17,11 +20,49 @@
         .item{
             margin: 10px;
             padding: 10px;
-            border: 1px solid blue;
+            background-color:#f7f6ee;
+        }
+
+        *{
+            font-family: 'Lora', serif;
+
+        }
+
+        .item .txt{
+            padding: 0 10px;
+        }
+
+        .item .txt h2{
+            font-size: 40px;
+            color: #613030;
+            padding: 20px 0; 
+            
+        }
+
+        .item .txt p{
+            line-height: 20px;
+            color:sienna;
+            text-align: justify;
+            text-justify:inter-ideograph;
+        }
+
+        .item .txt p:first-letter{
+            font-size : 200%;
+        }
+
+
+        .item .txt a{
+            text-decoration: none;
+            color: gray;
+        }
+
+        .item .pic{
+            padding: 0 10px;
         }
 
         .item img{
             width: 100%;
+            
         }
 
         @media screen and (min-width:768px){ 
@@ -50,29 +91,24 @@
         <div class="item">
             <div class="pic"><img src="https://picsum.photos/350/200/?random=1"></div>
             <div class="txt">
-                <h2>title</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, ipsa.</p>
+                <h2>Book of the Year</h2>
+                <p><i>Klara and the Sun: A novel,</i> is set in a dystopian future in which some children are genetically engineered ("lifted") for enhanced academic ability. As schooling is provided entirely at home by on-screen tutors, opportunities for socialization are limited and parents who can afford it often buy their children androids as companions. The book is narrated by one such Artificial Friend (AF) called Klara. Although Klara is exceptionally intelligent and observant, her knowledge of the world is limited. <a href="#">...more</a></p>
+               
             </div>
         </div>
         <div class="item">
             <div class="pic"><img src="https://picsum.photos/350/200/?random=1"></div>
             <div class="txt">
-                <h2>title</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, ipsa.</p>
+                <h2>About the author</h2>
+                <p><i>KAZUO ISHIGURO was born in Nagasaki,</i>Japan, in 1954 and moved to Britain at the age of five. His eight previous works of fiction have earned him many honors around the world, including the Nobel Prize in Literature and the Booker Prize. His work has been translated into over fifty languages, and The Remains of the Day and Never Let Me Go, both made into acclaimed films, have each sold more than 2 million copies. He was given a knighthood in 2018 for Services to Literature. He also holds the decorations of Chevalier de l'Ordre des Arts et des Lettres from France and the Order of the Rising Sun, Gold and Silver Star from Japan. <a href="#">...more</a></p>
+               
             </div>
         </div>
         <div class="item">
             <div class="pic"><img src="https://picsum.photos/350/200/?random=1"></div>
             <div class="txt">
-                <h2>title</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, ipsa.</p>
-            </div>
-        </div>
-        <div class="item">
-            <div class="pic"><img src="https://picsum.photos/350/200/?random=1"></div>
-            <div class="txt">
-                <h2>title</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, ipsa.</p>
+                <h2>Read more about Ishiguro</h2>
+                <p><i>Some of Ishiguro's novels are set in the past.</i>Never Let Me Go has science fiction qualities and a futuristic tone; however, it is set in the 1980s and 1990s, and takes place in a parallel world very similar to ours. His fourth novel, The Unconsoled, takes place in an unnamed Central European city. The Remains of the Day is set in the large country house of an English lord in the period surrounding World War II. <a href="#">...more</a></p>
             </div>
         </div>
     </div>
