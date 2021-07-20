@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .row{
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        [class*="col"]{
+            margin-left: 15px; 
+            margin-right: 15px;
+        }
+
+        .item{
+            padding: 10px;
+            border: 1px solid red;
+        }
+
+        .col-1{ width: calc(100% / 12*1 - 15px * 2 ); }
+        .col-2{ width: calc(100% / 12*2 - 15px * 2 ); }
+        .col-3{ width: calc(100% / 12*3 - 15px * 2 ); }
+        .col-4{ width: calc(100% / 12*4 - 15px * 2 ); }
+        .col-5{ width: calc(100% / 12*5 - 15px * 2 ); }
+        .col-6{ width: calc(100% / 12*6 - 15px * 2 ); }
+        .col-7{ width: calc(100% / 12*7 - 15px * 2 ); }
+        .col-8{ width: calc(100% / 12*8 - 15px * 2 ); }
+        .col-9{ width: calc(100% / 12*9 - 15px * 2 ); }
+        .col-10{ width: calc(100% / 12*10 - 15px * 2 ); }
+        .col-11{ width: calc(100% / 12*11 - 15px * 2 ); }
+        .col-12{ width: calc(100% / 12*12 - 15px * 2 ); }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="row">
+            <div class="col">
+                <div class="item">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed perferendis, similique ipsa laborum rerum animi, asperiores, quas culpa praesentium placeat aspernatur harum aperiam. Suscipit mollitia perspiciatis vero repellat reprehenderit excepturi.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
