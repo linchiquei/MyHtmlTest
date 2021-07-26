@@ -13,8 +13,8 @@
 .row{
 	display: flex;
 	flex-wrap: wrap;
-	margin-left: clac(var(--grid-gap) * -1);
-	margin-right: clac(var(--grid-gap) * -1);
+	margin-left: calc(var(--grid-gap) * -1);
+	margin-right: calc(var(--grid-gap) * -1);
 }
 [class*="col-"],
 [class*="cols"] > *{
