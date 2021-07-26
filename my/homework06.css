@@ -275,7 +275,15 @@ hr{
 }
 }
 
-.class h4,
+
+.class h4{
+    text-align: center;
+    font-size: 20px;
+    line-height: 28px;
+    padding-top: 15px;
+    width: 70%;
+}
+
 .feature h4{
 text-align: center;
 font-size: 20px;
@@ -286,7 +294,7 @@ padding-bottom: 70px;
 
 .feature .item{
   text-align: center;
-  padding-bottom: 40px;
+  
 }
 
 .feature h3{
@@ -323,6 +331,7 @@ padding-bottom: 70px;
     vertical-align: middle;
     padding-bottom: 25px;
     padding-top: 40px;
+    width: 100%;
 }
 .artcle h4{
     font-size: 20px;
@@ -415,15 +424,9 @@ padding-bottom: 70px;
 .tea{
     padding-bottom: 100px;
 }
-.tea .col{
-    padding-bottom: 30px;
-}
 
-@media screen and (min-width:768px){
-    .tea .col:nth-child(odd){
-        padding-right: 30px;
-    }
-}
+
+
 
 .tea li{
     display: inline-block;
@@ -547,14 +550,9 @@ strong{
     height: 100px;
     display: flex;
     flex-direction: column;
-    margin-bottom: 30px;
 }
 
-@media screen and (min-width:768px){
-    .news .col:nth-child(odd) .item{
-        margin-right: 30px;
-    }
-}
+
 
 .news hr{
     margin-bottom: 60px;
@@ -581,24 +579,18 @@ strong{
 .class{
     margin: auto;
     max-width: 1152px;
+    
 }
 
-.class .cla-box{
-    padding-bottom: 45px;
-}
 
 @media screen and (max-width:768px){
-    .class .cla-box{
-        box-sizing: border-box;
-        padding: 0 25px;
-    }
 }
 
-.class .cla-box > *{
+.class .box .row > *{
     text-align: left;
 }
 
-.class .cla-box h2::after{
+.class h2::after{
     content: '';
     display: block;
     width: 3rem;
@@ -715,7 +707,6 @@ strong{
     background-color: rgba(255,255,255,var(--tw-bg-opacity));
     border-radius: 0.5rem;
     box-sizing: border-box;
-    margin-bottom: 30px;
 }
 
 
@@ -726,8 +717,3 @@ strong{
     overflow: hidden;
 }
 
-@media screen and (min-width:768px){
-    .class .cla-box .item:first-child{
-        margin-right: 30px;
-    }
-}
