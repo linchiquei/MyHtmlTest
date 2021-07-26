@@ -1,6 +1,7 @@
 *{
     font-family: 'Noto Sans TC', sans-serif;
     color: #3a4250;
+    /* outline: 1px solid red; */
 }
 .copy{
     background-color: #181e2e;
@@ -10,63 +11,131 @@
     font-size: 0.875rem;
     text-align: center;
 }
+
+#menu-control{
+    position: fixed;
+    top: 0;
+    left: -30px;
+}
+
 .menu{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 25px;
-    position:fixed;
+    padding: 20px 25px;
+    box-sizing: border-box;
+    position: fixed;
     top: 0;
     background-color: white;
-    width: 100%;
-    box-sizing: border-box;
     z-index: 1;
-    --tw-shadow: 0 10px 15px -3px rgba(113,128,150,0.1),0 4px 6px -2px rgba(113,128,150,0.05);
-    box-shadow: var(--tw-ring-offset-shadow,0 0 #0000),var(--tw-ring-shadow,0 0 #0000),var(--tw-shadow);
+    width: 100%;
 }
 
-@media screen and (max-width:768px){ 
+a{
+    text-decoration: none;
+}
+
+.menu a{
+    font-size: 18px;
+}
+
+.menu a:hover{
+    color: red;
+}
+
+.menu .logo{
+    flex-grow: 1;
+    display: flex;
+}
+
+.menu nav a{
+    padding: 15px;
+}
+
+@media screen and (max-width:767px){ 
     .menu nav{
-        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        opacity: 0;
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu nav a{
+        display: block;
+        padding: 22.5px 15px;
+    }
+
+    #menu-control:checked ~ .menu nav{
+        opacity: 1;
+    }
+
+    .menu .rwd-txt{
+        display: block;
     }
     .menu .txt{
         display: none;
     }
-    .menu{
-        padding: 15px;
+    .btn-hb{
+        width: 40px;
+        height: 40px;
+        
+        position: relative;
+    }
+    .btn-hb .bar{
+        width: 86%;
+        height: 1px;
+        background-color: #666;
+        /*display: block;*/
+        position: absolute;
+        top: 18px;
+        right: 0;
+        left: 0;
+        opacity: 1;
+        margin: auto;
+    }
+    .btn-hb .bar:first-child{
+        top: 10px;
+        transform: rotate(0deg);
+    }
+    .btn-hb .bar:last-child{
+        top: 26px;
+        transform: rotate(0deg);
+    }
+
+    #menu-control:checked ~ .menu .btn-hb .bar:nth-child(2){
+        opacity: 0;
+        transition: opacity .1s;
+    }
+    #menu-control:checked ~ .menu .btn-hb .bar:first-child{
+        top: 18px;
+        transform: rotate(45deg);
+        transition: top .1s, transform .1s .1s;
+    }
+    #menu-control:checked ~ .menu .btn-hb .bar:last-child{
+        top: 18px;
+        transform: rotate(135deg);
+        transition: top .1s, transform .1s .1s;
+    }
+}
+@media screen and (min-width:768px){ 
+    .menu .rwd-txt{
+        display: none;
+    }
+    .menu .txt{
+        display: block;
+    }
+    .menu nav a:hover{
+        text-decoration:underline 3px red;
+        text-underline-offset: 20px;
     }
 }
 
-.menu .pic{
-    width: 40px;
-    height: 18px;
-}
-.menu .pic img{
-    width: 100%;
-    vertical-align: middle;
-}
-a{
-    text-decoration: none;
-}
-.menu a{
-    font-size: 18px;
-    color: black;
-    
-}
-.menu a:first-of-type{
-    flex-grow: 1;
-}
-.menu a:hover{
-    color: red;
-}
-.menu nav a{
-    padding: 0 15px;
-}
-.menu nav a:hover{
-    text-decoration:underline 3px red;
-    text-underline-offset: 25px;
-}
-.menu .txt{
+.menu .txt,
+.menu .rwd-txt{
     font-weight: 700;
     margin-left: 5px;
 }
