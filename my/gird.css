@@ -1,8 +1,8 @@
 .box{ 
-    --grid-gap:25px;
+    --grid-gap:15px;
     padding-left: var(--grid-gap);
     padding-right: var(--grid-gap);
-    max-width: 1375px;
+    max-width: 1400px;
     box-sizing: border-box;
     margin: auto;
     
@@ -26,7 +26,7 @@
 	box-sizing: border-box;
 	padding-left: var(--grid-gap);
 	padding-right: var(--grid-gap);
-	margin-bottom: 20px;
+	margin-bottom: 30px;
 }
  .col-1{ width: 8.333333%;}
  .col-2{ width: 16.666666%;}

@@ -261,27 +261,32 @@ a{
   margin: auto;
 }
 
+.class h2{
+    text-align: left;
+}
+
 hr{
   width: 3rem;
   border: red solid 1px;
 }
 
 @media screen and (min-width:768px){ 
-.class h2,
-.news h2,
-.feature h2,
-.artcle h2{
-    font-size: 30px;
-}
+    .class h2,
+    .news h2,
+    .feature h2,
+    .artcle h2{
+        font-size: 30px;
+    }
 }
 
 
 .class h4{
-    text-align: center;
+    text-align: left;
     font-size: 20px;
     line-height: 28px;
     padding-top: 15px;
-    width: 70%;
+    padding-bottom: 35px;
+    max-width: 736px;
 }
 
 .feature h4{
@@ -390,8 +395,12 @@ padding-bottom: 70px;
 }
 
 .c-box{
-    padding: 0 25px;
-    margin: auto;
+    max-width: 918px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 40px;
 }
 
 .c-box h2{
@@ -426,8 +435,6 @@ padding-bottom: 70px;
 }
 
 
-
-
 .tea li{
     display: inline-block;
 }
@@ -454,7 +461,7 @@ padding-bottom: 70px;
 }
 
 .tea .col-md-9{
-    padding: 35px;
+    padding-left: 35px;
 }
 
 .tea .col-md-9 h3{
@@ -579,7 +586,6 @@ strong{
 .class{
     margin: auto;
     max-width: 1152px;
-    
 }
 
 
