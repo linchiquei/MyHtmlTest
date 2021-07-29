@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            background-color: turquoise;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            
+        }
+            .btn-hb{
+                display: block;
+				width: 40px;
+				height: 40px;
+				background-color: #aaa;
+				position: relative;
+			}
+			.btn-hb .bar{
+				width: 86%;
+				height: 1px;
+				background-color: #666;
+				display: block;
+				position: absolute;
+				top: 18px;
+				right: 0;
+				left: 0;
+				opacity: 1;
+				margin: auto;
+			}
+			.btn-hb .bar:first-child{
+				top: 10px;
+				transform: rotate(0deg);
+			}
+			.btn-hb .bar:last-child{
+				top: 26px;
+				transform: rotate(0deg);
+			}
+            #menu-control:checked ~ header .btn-hb .bar:nth-child(2){
+				opacity: 0;
+				transition: opacity .3s;
+			}
+			#menu-control:checked ~ header .btn-hb .bar:first-child{
+				top: 18px;
+				transform: rotate(45deg);
+				transition: top .3s, transform .3s .3s;
+			}
+			#menu-control:checked ~ header .btn-hb .bar:last-child{
+				top: 18px;
+				transform: rotate(135deg);
+				transition: top .3s, transform .3s .3s;
+			}
+
+           
+            header{
+                position: relative;
+            }
+            @media screen and (max-width:767px){
+                nav{
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+            }
+            #menu-control:checked ~ header nav a{
+                background-color: yellow;
+            }
+            nav a{
+                width: 100px;
+                text-decoration: none;
+                padding: 10px 0;
+                background-color: violet;
+            }
+            }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="menu-control">
+
+<header>
+    <label class="btn-hb" for="menu-control">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </label>
+    <nav>
+        <a href="#">123</a>
+        <a href="#">123</a>
+        <a href="#">123</a>
+        <a href="#">123</a>
+        <a href="#">123</a>
+        <a href="#">123</a>
+    </nav>
+</header>
+
+
+</body>
+</html>

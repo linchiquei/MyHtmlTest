@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Hello, world!</title>
+    <style>
+      .item{
+        background-color: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div class="container">
+          <div class="row">
+              <div class="col-12 col-md-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint at quis similique officia corrupti numquam placeat sunt ex, accusantium assumenda. Blanditiis animi ipsum molestias, consequatur deserunt asperiores? Similique, esse eius?</div>
+              <div class="col-12 col-md-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint at quis similique officia corrupti numquam placeat sunt ex, accusantium assumenda. Blanditiis animi ipsum molestias, consequatur deserunt asperiores? Similique, esse eius?</div>
+              <div class="col-12 col-md-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint at quis similique officia corrupti numquam placeat sunt ex, accusantium assumenda. Blanditiis animi ipsum molestias, consequatur deserunt asperiores? Similique, esse eius?</div>
+          </div>
+      </div>
+
+      <div class="container">
+          <div class="row g-3 g-md-3 row-cols-1 row-cols-md-4">
+              <div class="col">
+                  <div class="item h-100">
+                    <img class="w-100" src="https://picsum.photos/300/100/?random=1">
+                      <p>貼到網站或部落格可以輸入 HTML 代碼的位置，就能簡單完成嵌入影片。
+
+                        接下來要介紹一些進階的設定，所有設定只需要變更上方 HTML 代碼內的影片網址就能達成，設定方式如下：</p>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="item h-100">
+                      <img class="w-100" src="https://picsum.photos/300/100/?random=1">
+                      <p>很多部落客或網站經營者，都會有嵌入 YouTube 影片的需求。而 YouTube 也提供很方便的方式，只要複製貼上 HTML 代碼就能完成嵌入 YouTube 影片，另外也提供很多進階的設定，只要在嵌入影片網址加上簡單的參數，就能達到自動播放和輪播等功能。</p>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="item h-100">
+                      <img class="w-100" src="https://picsum.photos/300/100/?random=1">
+                      <p>最後示範以上所有參數混合使用，該影片從第1分鐘到第2分鐘一直重播，完整嵌入網址如下：</p>
+                  </div>
+              </div>
+              <div class="col">
+                  <div class="item h-100">
+                      <img class="w-100" src="https://picsum.photos/300/100/?random=1">
+                      <p>某些部落格像 WordPress 在編輯文章時，可以直接貼上 Youtube 等影片網址，直接解析成影片區塊。但這時候會發現，所有網址後面的參數全都不見了，所以就無法成功設定 Youtube 影片參數。
+
+                        這邊以本站使用的 WordPress 5.5 為例，示範如何成功嵌入”影片從第1分鐘播到第2分鐘，然後重播該影片”的 Youtube 影片。
+                        
+                        首先在區塊工具裡面選擇傳統編輯器。</p>
+                  </div>
+              </div>
+              <div class="col">
+                <div class="item h-100">
+                    <img class="w-100" src="https://picsum.photos/300/100/?random=1">
+                    <p>貼上之後再從選單選擇「視覺化編輯」，就能看到預覽了 (預覽時可能顯示較小，以實際發布無主)。以下是嵌入的示範影片：</p>
+                </div>
+            </div>
+          </div>
+      </div>
+  </body>
+</html>
